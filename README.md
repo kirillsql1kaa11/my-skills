@@ -1,8 +1,8 @@
 # my-skills
 
-Личная коллекция скиллов (skills) для AI-агентов: [opencode](https://opencode.ai) и [Google Antigravity](https://antigravity.google).
+21 скилл для AI-агентов: [opencode](https://opencode.ai) и [Google Antigravity](https://antigravity.google).
 
-Всего 21 навык: 9 для opencode и 12 для Antigravity. Каждый скилл — отдельный каталог с описанием и инструкцией по установке.
+9 скиллов работают в opencode, 12 — в Antigravity. Каждый лежит отдельным каталогом: сам навык, README с описанием и командой установки.
 
 ![skills](https://img.shields.io/badge/skills-21-2ea44f)
 ![opencode](https://img.shields.io/badge/opencode-9-0b7285)
