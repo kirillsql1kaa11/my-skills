@@ -1,11 +1,11 @@
 # my-skills
 
-21 скилл для AI-агентов: [opencode](https://opencode.ai) и [Google Antigravity](https://antigravity.google).
+26 скиллов для AI-агентов: [opencode](https://opencode.ai) и [Google Antigravity](https://antigravity.google).
 
-9 скиллов работают в opencode, 12 — в Antigravity. Каждый лежит отдельным каталогом: сам навык, README с описанием и командой установки.
+14 скиллов работают в opencode, 12 — в Antigravity. Каждый лежит отдельным каталогом: сам навык, README с описанием и командой установки.
 
-![skills](https://img.shields.io/badge/skills-21-2ea44f)
-![opencode](https://img.shields.io/badge/opencode-9-0b7285)
+![skills](https://img.shields.io/badge/skills-26-2ea44f)
+![opencode](https://img.shields.io/badge/opencode-14-0b7285)
 ![antigravity](https://img.shields.io/badge/antigravity-12-6741d9)
 ![license](https://img.shields.io/badge/license-MIT-eab308)
 
@@ -24,14 +24,19 @@ my-skills/
 | Скилл | Назначение |
 | :--- | :--- |
 | [`cleanup-temp`](cleanup-temp) | Автоуборка временных файлов и каталогов после задачи |
+| [`context-frugal`](context-frugal) | Точечный поиск по коду вместо чтения всего репозитория |
+| [`form-ux`](form-ux) | Формы без боли: понятные ошибки, ввод не теряется |
 | [`no-comments`](no-comments) | Код без комментариев, docstring и JSDoc |
+| [`no-secrets`](no-secrets) | Секреты и персональные данные не попадают в код, коммиты и логи |
 | [`perf-check`](perf-check) | Оптимизация только через измерения: база → изменение → повторный замер |
 | [`plain-talk`](plain-talk) | Краткие ответы без канцелярита и воды |
 | [`project-brief`](project-brief) | Разведка незнакомого проекта: стек, команды, конвенции |
 | [`responsive-basics`](responsive-basics) | Адаптивная вёрстка без развалов на узких и широких экранах |
 | [`ru-commits`](ru-commits) | Русские коммиты и релизы: conventional commits, без эмодзи и шаблонов |
+| [`token-thrift`](token-thrift) | Меньше токенов без потери качества: без дублей и перечитываний |
 | [`tradeoff-say`](tradeoff-say) | Честный блок «Компромиссы» после значимых технических решений |
 | [`ui-ux-pro-max`](ui-ux-pro-max) | Дизайн-интеллект: 79 стилей, 192 палитры, UX-правила и гайды по 22 стекам |
+| [`windows-sanity`](windows-sanity) | Windows без сюрпризов: PowerShell, пути, UTF-8, CRLF |
 
 ## Скиллы для Google Antigravity
 
@@ -61,10 +66,10 @@ git clone https://github.com/kirillsql1kaa11/my-skills.git
 Copy-Item -Recurse my-skills\cleanup-temp "$env:USERPROFILE\.config\opencode\skills\"
 ```
 
-Все 9 скиллов разом:
+Все 14 скиллов разом:
 
 ```powershell
-Get-ChildItem my-skills -Directory | Where-Object { Test-Path "$($_.FullName)\SKILL.md" } | Where-Object { $_.Name -in @("cleanup-temp","no-comments","perf-check","plain-talk","project-brief","responsive-basics","ru-commits","tradeoff-say","ui-ux-pro-max") } | Copy-Item -Destination "$env:USERPROFILE\.config\opencode\skills\" -Recurse -Force
+Get-ChildItem my-skills -Directory | Where-Object { Test-Path "$($_.FullName)\SKILL.md" } | Where-Object { $_.Name -in @("cleanup-temp","context-frugal","form-ux","no-comments","no-secrets","perf-check","plain-talk","project-brief","responsive-basics","ru-commits","token-thrift","tradeoff-say","ui-ux-pro-max","windows-sanity") } | Copy-Item -Destination "$env:USERPROFILE\.config\opencode\skills\" -Recurse -Force
 ```
 
 ### Google Antigravity
